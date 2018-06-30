@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+    <link href="https://fonts.googleapis.com/css?family=Krona+One" rel="stylesheet">
+  </head>
+  <body>
+
+
+    <div class="wrapper">
+
+
+      <!-- Hamburger button is static and has higher z-index to keep it visible over both the sidebar and map -->
+        <div>
+            <img id="hamburger" src="img/baseline-menu-24px.svg">
+        </div>
+  
+        <!-- div with sidebar id, is toggled between being visible and not visible -->
+        <div id="sidebar" class="sidebar-visible">
+  
+            <!--<div class="options-box">--> 
+              <h1>Asbury Park Venues</h1>
+              
+              <hr>
+              <div>
+              <div class="search-box">
+                  <input placeholder="Search Venues Here" data-bind="value: query, valueUpdate: 'afterkeydown'" id="query">
+              </div>
+              
+              <ul id="venue-list" data-bind="foreach: venueListResult">
+                <!--databind inside li to display the name of each venue.  -->
+                <li data-bind="text: title, click: $root.selectOneMarker"></li>
+            </ul>
+              </div>
+            </div> 
+  
+        
+      
+    
+      <div class="map-sidebar" id="map">
+    
+
+      </div>
+   
+
+    </div>
+
+
+
+
+
+  <script defer src="js/app.js" type="text/javascript"></script>
+  <script src="js/lib/knockout-3.2.0.js"></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+  <script
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAoIETUo2FUbjl-FXkCVkr6VUe256zg3Kk&v=3">
+  </script>
+
+
+
+  </body>
+</html>

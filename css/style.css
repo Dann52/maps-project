@@ -1,0 +1,118 @@
+
+
+li {
+    list-style-type: none;
+    
+}
+
+
+input {
+  font-size: 12px;
+}
+
+h1 {
+  color: #7B3234;
+  font-size: 22px;
+
+  margin: 0 0 10px 0;
+  text-align: center;
+  font-family: 'Krona One', sans-serif;
+}
+
+.search-box {
+  position: relative;
+  padding-left: 25px;
+}
+
+input, textarea {
+
+  background-color : #FFE146;
+
+}
+
+#venue-list {
+  padding-top: 15px;
+  padding-left: 25px;
+  align-content: left;
+  float: left;
+  margin-left: 0px;
+  color: #7B3234;
+  font-family: Arial, sans-serif;
+}
+
+.text {
+  font-size: 12px;
+}
+
+#wrapper {
+  margin-left: 250px;
+
+}
+
+#sidebar {
+  width: 250px;
+  height: 100vh;
+  float: left;
+  z-index: 5;
+  padding-top: 75px;
+  background-color: #EEA222;
+
+}
+
+
+.sidebar-visible {
+  display: inline;
+}
+
+.sidebar-no-visible {
+  display: none;
+}
+
+.map-sidebar {
+  width: calc(100% - 250px);
+  z-index: 1;
+
+}
+
+
+.map-no-sidebar {
+  width: 100%;
+  z-index: 6;
+  margin-top: 0px;
+
+}
+
+#map {
+  height: 100vh;
+  float: right;
+}
+
+.map-toggle-sidebar {
+  z-index: 1;
+  width: calc(100% - 250px);
+
+}
+
+.map-toggle-no-sidebar {
+  z-index: 6;
+  width: 100%
+}
+
+
+#hamburger {
+  margin-left: 10px;
+  margin-top: 15px;
+  height: 50px;
+  width: 50px;
+  left: 20px;
+  position: fixed;
+  z-index: 10;
+  background-color: #7B3234;
+  opacity: 90%;
+  fill: white;
+}
+
+
+.infoTitle {
+  font-size: 16px;
+}
